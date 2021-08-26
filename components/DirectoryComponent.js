@@ -8,6 +8,7 @@ function Directory(props) {
       <ListItem
         title={item.name}
         subtitle={item.description}
+        onPress={() => props.onPress(item.id)}
         leftAvatar={{ source: require("./images/react-lake.jpg") }}
       />
     );
